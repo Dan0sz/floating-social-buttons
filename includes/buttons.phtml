@@ -1,0 +1,12 @@
+<?php
+$postUrl = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+?>
+<section class="<?= $container; ?>">
+    <div class="share-buttons-wrapper">
+        <div class="share-buttons">
+            <a target="_blank" class="share-button share-twitter" href="https://twitter.com/intent/tweet?url=<?= $postUrl; ?>&text=<?= the_title(); ?>&via=Dan0sz" title="Tweet this"><span class="icon"></span><span class="text">Tweet</span></a>
+            <a target="_blank" class="share-button share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?= $postUrl; ?>" title="Share on Facebook"><span class="icon"></span><span class="text">Share</span></a>
+            <a target="_blank" class="share-button share-donate" href="/donate/" title="Buy me a beer!"><span class="icon"></span><span class="text">Donate</span></a>
+        </div>
+    </div>
+</section>

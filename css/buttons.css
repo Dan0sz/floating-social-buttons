@@ -1,0 +1,114 @@
+/**
+ * CSS for Social Share Buttons
+ * @author  Daan van den Bergh
+ * @package Dan0sz/wordpress
+ * @url https://daan.dev
+ */
+
+.share-buttons-container,
+.share-buttons-container-clone {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.share-buttons-container-clone {
+    position: fixed;
+    display: none;
+    z-index: 100000;
+}
+
+.share-buttons-wrapper {
+    line-height: 1;
+}
+
+.share-buttons {
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.share-buttons .share-button a {
+    padding: 13px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    float: left;
+    border: 0;
+    text-decoration: none;
+}
+
+.share-buttons a.share-button {
+    margin: 0 2px 0 2px;
+}
+
+.share-buttons a.share-button:first-child,
+.share-buttons a.share-button:last-child {
+    margin: 0
+}
+
+.share-buttons-container .share-button,
+.share-buttons-container-clone .share-button {
+    position: relative;
+    display: inline-block;
+    padding: 15px 0;
+    min-width: 0;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.share-buttons a.share-button:hover {
+    opacity: 0.8;
+}
+
+.share-buttons a .icon {
+    display: initial;
+    color: #fff;
+}
+
+.share-buttons a .text {
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.share-buttons a .icon:before {
+    font-family: "Font Awesome 5 Brands";
+    font-size: 20px;
+    display: inline-block;
+    width: 1em;
+    margin-right: .7em;
+    text-align: center;
+}
+
+.share-facebook {
+    background: #2d5f9a;
+}
+
+.share-facebook .icon:before {
+    content: '\f39e';
+}
+
+.share-twitter {
+    background: #00c3f3;
+}
+
+.share-twitter .icon:before {
+    content: '\f099';
+}
+
+.share-donate {
+    background: #F56991;
+}
+
+.share-donate .icon:before {
+    content: '\f1ed';
+}
