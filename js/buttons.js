@@ -24,12 +24,11 @@ $ssbWindow.scroll(function() {
     /**
      * Only appear if widget reaches top of screen.
      */
-    navbarHeight = jQuery('nav.navbar').height();
-    widgetOffset = widget.offset().top - navbarHeight;
+    widgetOffset = widget.offset().top;
     
     if ($ssbWindow.scrollTop() >= widgetOffset) {
         widget.css('opacity', '0');
-        widgetClone.css('top', navbarHeight);
+        widgetClone.css('top', 0);
         widgetClone.show();
     } else {
         widget.css('opacity', '1');
